@@ -34,7 +34,7 @@ windows:
       panes:
         - editor:
             - pyenv activate ansible-role-nginx
-            - <%= ENV["EDITOR"] %>
+            - pyenv activate ansible-role-nginx
         - vagrant:
             - pyenv activate ansible-role-nginx
         - docker:
