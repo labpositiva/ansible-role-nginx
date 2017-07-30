@@ -1,0 +1,8 @@
+---
+
+# task file for labpositiva.nginx
+
+- name: Ensure nginx is installed.
+  package:
+    name: "{{ _nginx_package_name }}"
+    state: latest
