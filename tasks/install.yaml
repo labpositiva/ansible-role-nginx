@@ -1,0 +1,10 @@
+---
+# task for labpositiva.nginx
+
+- include: install.d/RedHat.yaml
+  when:
+    - ansible_os_family == "RedHat"
+
+- include: install.d/Debian.yaml
+  when:
+    - ansible_os_family == 'Debian'

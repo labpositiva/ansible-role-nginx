@@ -1,0 +1,8 @@
+---
+# task file for labpositiva.nginx
+
+- name: enabled gzip
+  template:
+    src: "gzip.conf.j2"
+    dest: "{{ _nginx_conf_path }}/gzip.conf"
+  when: nginx_gzip is defined and nginx_gzip|bool
