@@ -4,6 +4,8 @@ This file uses change log convention from [Keep a CHANGELOG](http://keepachangel
 
 ## [Unreleased]
 
+## [0.0.2] - 2017-08-07
+
 ## [0.0.1] - 2017-07-31
 
 [Unreleased]: https://github.com/labpositiva/ansible-role-nginx/compare/0.0.1...HEAD
