@@ -1,7 +1,7 @@
 {% for item in nginx_vhost_upstreams %}
 upstream {{ item.name }} {
   {% if item.proxy_pass is defined %}
-    {{ item.proxy_pass|indent(4) }}
+   server {{ item.proxy_pass|indent(4) }};
   {% endif %}
 }
 {% endfor %}
